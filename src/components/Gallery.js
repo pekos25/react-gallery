@@ -44,6 +44,22 @@ const Gallery = () => {
     <>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} alt="Jakovljevo" />
+        {/* <div
+          className="closebtn"
+          onClick={() => {
+            setModel(false);
+          }}
+        >
+          <span>X</span>
+        </div> */}
+        <button
+          className="closebtn"
+          onClick={() => {
+            setModel(false);
+          }}
+        >
+          X
+        </button>
       </div>
       <div className="gallery">
         {data.map((item, index) => {
